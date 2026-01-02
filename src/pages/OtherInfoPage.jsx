@@ -34,8 +34,8 @@ export default function OtherInfoPage() {
       <div className="mb-12 max-w-4xl mx-auto">
         <h2 className="text-2xl font-semibold mb-6">Education</h2>
         <ul className="space-y-4">
-          {education.map((edu, index) => (
-            <li key={index} className="bg-gray-800 rounded-lg p-4 shadow-md">
+          {education.map((edu) => (
+            <li key={edu.degree + edu.institution} className="bg-gray-800 rounded-lg p-4 shadow-md">
               <p className="font-medium">{edu.degree}</p>
               <p className="text-gray-300">{edu.institution}</p>
               <p className="text-gray-400 text-sm">{edu.period}</p>
@@ -48,8 +48,8 @@ export default function OtherInfoPage() {
       <div className="mb-12 max-w-4xl mx-auto">
         <h2 className="text-2xl font-semibold mb-6">Languages</h2>
         <ul className="space-y-2">
-          {languages.map((lang, index) => (
-            <li key={index} className="bg-gray-800 rounded-lg p-4 shadow-md">
+          {languages.map((lang) => (
+            <li key={lang.language} className="bg-gray-800 rounded-lg p-4 shadow-md">
               <p className="font-medium">{lang.language}</p>
               <p className="text-gray-300">{lang.level}</p>
             </li>
@@ -61,12 +61,12 @@ export default function OtherInfoPage() {
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl font-semibold mb-6">Hobbies</h2>
         <ul className="space-y-4">
-          {hobbies.map((h, index) => (
+          {hobbies.map((h) => (
             <li
-              key={index}
+              key={h.hobby}
               className="bg-gray-800 rounded-lg p-4 shadow-md"
             >
-              <p className="text-gray-300">{h.hobby}</p>
+              <p className="font-medium">{h.hobby}</p>
             </li>
           ))}
         </ul>

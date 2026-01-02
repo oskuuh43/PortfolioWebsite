@@ -2,7 +2,7 @@ export default function ProjectCard({ title, description, tech = [], githubLink,
   return (
     <div className="bg-gray-800 p-8 rounded-lg shadow-lg flex flex-col gap-6 w-full max-w-4xl mx-auto">
       <div className="text-center">
-        <h3 className="text-4xl font-bold mb-4">{title}</h3>
+        <h3 className="text-2xl sm:text-3x1 md:text-4x1 font-bold mb-4">{title}</h3>
         <p className="text-gray-300">{description}</p>
       </div>
 
