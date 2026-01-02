@@ -2,7 +2,7 @@ export default function HeroSection() {
   return (
     <section className="text-center py-16">
       <img
-        src="/ProfilePic.jpg" 
+        src="/PortfolioWebsite/ProfilePic.jpg" 
         alt="Oskar Sundfors"
         className="w-56 h-56 object-cover mx-auto rounded-full mb-6 border-4 border-indigo-500"
       />
